@@ -1,52 +1,52 @@
-/* Style général */
+
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #1E3A8A, #E91E63); /* Dégradé bleu → rose */
+    background: linear-gradient(to right, #1E3A8A, #E91E63); 
     color: rgb(6, 5, 5);
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-/* En-tête */
+
 header {
     display: flex;
-    align-items: center; /* Centre verticalement */
+    align-items: center; 
     justify-content: space-between; /* Espacement entre l'image et le texte */
     padding: 20px;
     width: 80%;
     margin: auto;
 }
 
-/* Style du titre */
+
 h1 {
     font-size: 100px;
     text-align: left;
     color:rgb(69, 8, 58);
 }
 
-/* Style de l'image */
+
 header img {
     width: 150px;
     height: 150px;
-    border-radius: 80%; /* Image en cercle */
+    border-radius: 80%; /* Pourque l'image soit en cercle */
     object-fit: cover;
     border: 3px solid white;
 }
 
-/* Section informations personnelles */
+
 section {
     width: 80%;
     margin: 20px auto;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.3); /* Fond semi-transparent */
+    background: rgba(0, 0, 0, 0.3); 
     border-radius: 10px;
     text-align: left;
 }
 
-/* Liens email */
+
 a {
-    color: rgb(255, 223, 186); /* Couleur plus visible */
+    color: rgb(255, 223, 186); 
     text-decoration: none;
 }
 
@@ -54,14 +54,14 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Formation */
+
 h2 {
     font-size: 40px;
-    color: #14089c; /* Jaune doré pour meilleure lisibilité */
+    color: #14089c; 
     margin-bottom: 10px;
 }
 
-/* Liste de définitions */
+
 dl dt {
     text-align: left;
     font-weight: bold;
@@ -72,16 +72,16 @@ dl dd {
     margin-left: 20px;
 }
 
-/* Liste compétences */
+
 ul {
     text-align: left;
     margin-left: 20px;
     padding-left: 20px;
 }
 
-/* Section compétences */
+
 h3 {
-    color: #b285b8; /* Jaune doré */
+    color: #b285b8; 
     margin-top: 30px;
 }
 
