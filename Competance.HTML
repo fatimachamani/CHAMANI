@@ -1,0 +1,132 @@
+<!DOCTYPE html> 
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétences - Chamani Fatima</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #b483a8;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .competences {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #651f68;
+            margin-bottom: 20px;
+            font-size: 28px;
+            text-transform: uppercase;
+        }
+        h2:hover{
+            background: transparent;
+            color: rgb(183, 12, 183);
+            transform: scale(1.1);
+        }
+
+        .competence-category {
+            text-align: left;
+            margin-bottom: 25px;
+            padding: 20px;
+            border-left: 5px solid #b411b7;
+            background: #f9f9f9;
+            border-radius: 5px;
+        }
+        .competence-category:hover{
+            transform: scale(1.1);
+        }
+
+        .competence-category h3 {
+            color: #b96aae;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .competence-category ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .competence-category ul li {
+            font-size: 18px;
+            margin: 10px 0;
+            padding-left: 35px;
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .competence-category ul li img {
+            width: 30px;
+            height: 30px;
+            margin-right: 15px;
+        }
+
+        .competence-category ul li::before {
+            content: "✔";
+            color: #75317e;
+            position: absolute;
+            left: 0;
+        }
+
+        .competence-category ul li span {
+            color: #6a1361;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="competences">
+        <h2>Mes Compétences</h2>
+        
+        <div class="competence-category">
+            <h3>Langues</h3>
+            <ul>
+                <li>🇫🇷 <span>Français</span> - Courant</li>
+                <li>🇦🇪 <span>Arabe</span> - Soutenu</li>
+                <li>🇬🇧 <span>Anglais</span> - Niveau Moyen</li>
+            </ul>
+        </div>
+
+        <div class="competence-category">
+            <h3>Informatique</h3>
+            <ul>
+                <li><img src="PythonL.png" alt="Logo Python"> <span>Python</span></li>
+                <li><img src="Matlab.png" alt="Logo Matlab"> <span>Matlab</span></li>
+                <li><img src="CodeB.png" alt="Logo Code::Blocks"> <span>Code::Blocks</span></li>
+                <li><img src="HTML.png" alt="Logo HTML"> <span>HTML</span></li>
+                <li><img src="CSS.png" alt="Logo CSS"> <span>CSS</span></li>
+            </ul>
+        </div>
+
+        <div class="competence-category">
+            <h3>Qualités personnelles</h3>
+            <ul>
+                <li><span>Dynamique</span></li>
+                <li><span>Facilité d’adaptation</span></li>
+                <li><span>Esprit d’équipe</span></li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+</html>

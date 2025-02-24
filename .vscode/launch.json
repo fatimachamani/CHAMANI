@@ -7,8 +7,8 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open PotfolioCHAMANIFATIMA.HTML",
-            "file": "c:\\Users\\Fatima\\Downloads\\GettingStarted1\\PotfolioCHAMANIFATIMA.HTML"
+            "name": "Open CHAMANI_FATIMA.html",
+            "file": "c:\\Users\\Fatima\\Downloads\\GettingStarted1\\CHAMANI_FATIMA.html"
         }
     ]
 }

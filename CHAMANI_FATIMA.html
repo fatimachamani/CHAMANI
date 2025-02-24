@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Chamani Fatima</title>
+    <!--<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">-->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        .hero {
+            height: 100vh;
+            width: 100%;
+            background-color: #eaa8e1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 20px 50px;
+        }
+
+        .logo {
+            font-size: 100px;
+            font-weight: 800;
+            color: rgb(56, 8, 56);
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.1);
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            padding: 8px 15px;
+        }
+
+        nav ul li a {
+            color: #241d24;
+            font-weight: bold;
+            font-size: 18px;
+            transition: all 0.2s ease;
+        }
+
+        nav ul li a:hover {
+            color: rgb(163, 96, 170);
+        }
+
+        .btn {
+            color: white;
+            text-transform: uppercase;
+            background-color: rgb(177, 70, 170);
+            padding: 12px 35px;
+            border-radius: 2em;
+            font-weight: 500;
+            transition: all 0.4s ease;
+            border: 2px solid rgb(82, 14, 73);
+        }
+
+        .btn:hover {
+            background: transparent;
+            color: rgb(125, 122, 125);
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+
+        .detail {
+            max-width: 500px;
+            text-align: left;
+            margin-right: 50px;
+        }
+
+        .detail h1 {
+            font-size: 60px;
+            font-weight: 700;
+            color: #bd19a4;
+        }
+
+        .detail h1 span {
+            color: rgb(3, 3, 3);
+        }
+
+        .detail p {
+            font-size: 20px;
+            color: #1d1d24;
+            margin-top: 20px;
+        }
+
+        .image img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        /* Section réseaux sociaux */
+        .social-links {
+            display: none;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .social-links img {
+            width: 50px;
+            height: 50px;
+            margin: 0 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-links img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul {
+                margin-top: 10px;
+            }
+
+            .content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .detail {
+                margin-right: 0;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <nav>
+            <h1 class="logo">CHAMANI FATIMA</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="Education.HTML">Education</a></li>
+                <li><a href="Competance.HTML">Compétances</a></li>
+                <li><a href="PotfolioCHAMANIFATIMA.HTML">Mon CV</a></li>
+                <li><a href="#" onclick="toggleSocialLinks()">Contact</a></li>
+
+            </ul>
+            <a href="Se connect.html" class="btn">Sign in</a>
+            <a href="login in .html" class="btn">Login in</a>
+            <a href="pomodoro.html" class="btn">Pomodoro timer</a>
+        </nav>
+
+        <div class="content">
+            <div class="detail">
+                <h1>Bienvenue, je suis <span>CHAMANI Fatima</span></h1>
+                <p>Etudiante en 1 er année cycle en ingénierie & informatique des données en ENSAK </p>
+            </div>
+            <div class="image">
+                <img src="photo.png" alt="Photo de Chamani Fatima">
+            </div>
+        </div>
+        
+        <!-- Section réseaux sociaux -->
+        <div class="social-links" id="social-links">
+            <a href="https://www.instagram.com" target="_blank"><img src="insta.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com" target="_blank"><img src="facb.png" alt="Facebook"></a>
+            <a href="https://github.com" target="_blank"><img src="giit.png" alt="GitHub"></a>
+            <a href="https://www.linkedin.com" target="_blank"><img src="linkd.png" alt="LinkedIn"></a>
+        </div>
+    </div>
+
+    <script>
+        // Fonction pour afficher ou cacher la section des réseaux sociaux
+        function toggleSocialLinks() {
+            const socialLinks = document.getElementById('social-links');
+            socialLinks.style.display = socialLinks.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+
+</body>
+</html>
