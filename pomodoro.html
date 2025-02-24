@@ -87,43 +87,7 @@
             <button id="reset">Reset</button>
         </div>
     </div>
-    <!--<script>
-        const start = document.getElementById("start");/*permet de récuperer les éléments HTML avec leurs ID*/
-        const pause = document.getElementById("pause");
-        const reset = document.getElementById("reset");
-        const timer = document.getElementById("timer");
-        let timeLeft=1500;/*Le temps restant en secondes(1500 sec = 25 minutes)*/
-        let interval;/*Stocke l'identifiant de l'intervalle (setInterval), utile pour démarrer et arrêter le timer*/
-        const updateTimer =() =>{
-            const minutes = Math.floor(timeLeft/60);/*Extrait les minutes entières*/
-            const seconds = timeLeft % 60;/* Récupère les secondes restantes*/
-            timer.innerHTML=/*Mise à jour du texte dans le <p id="timer"> Exemple : Si timeLeft = 145, alors timer.innerHTML = "02:25" */
-            `${minutes.toString().padStart(2,"0")} 
-            :
-            ${seconds.toString().padStart(2,"0")}`;/*toString().padStart(2, "0") : Ajoute un 0 devant les nombres à un chiffre (5 devient 05)*/
-        };
-        const startTimer = () =>{
-            interval=setInterval(()=>{
-                timeLeft--;
-                updateTimer();
-                if (timeLeft === 0){
-                    clearInterval(interval);
-                    alert("Time to  breaaaaak!!!!!");
-                    timeLeft = 1500;
-                    updateTimer();
-                }
-            },1000);
-        };
-        const pauseTimer=() => clearInterval(interval);
-        const resetTimer=() =>{
-            clearInterval(interval);
-            timeLeft=1500;
-            updateTimer();
-        }
-        start.addEventListener("click",startTimer);
-        pause.addEventListener("click",pauseTimer);
-        reset.addEventListener("click",resetTimer);
-    </script>-->
+   
     <script>
     const start = document.getElementById("start");
     const pause = document.getElementById("pause");
